@@ -1,0 +1,45 @@
+* {
+    box-sizing: inherit;
+
+
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+}
+
+body {
+    box-sizing: border-box;
+
+    font-family: 'Instrument Serif', serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 2.6rem;
+    font-style: normal;
+    line-height: 2.8rem;
+    color: #462B20;
+    background-color: #FFF9F5;
+}
+
+@keyframes animationText {
+    from {
+        transform: translateY(70%); 
+        
+
+    }
+    to {
+        transform: translateY(0); 
+
+    }
+}
+@keyframes animationImage {
+    from {
+        transform: translateX(-70%); 
+    }
+    to {
+        transform: translateX(0);  
+          
+    }
+}

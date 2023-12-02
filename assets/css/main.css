@@ -1,0 +1,148 @@
+.main {
+    max-width: 138.3rem;
+    margin: 0 auto;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 7.6rem;
+    padding: 6.6rem 0;
+}
+.header {
+    font-family: Instrument Serif;
+    text-align: center;
+    font-size: 5.8rem;
+    line-height: 6.1rem;
+    letter-spacing: -0.58px;
+}
+
+.content {
+    display: flex;
+    gap: 11.7rem;
+    justify-content: space-between;
+    flex: 1 0 100%;
+}
+.left-content {
+    padding-top: 5.4rem;
+    max-width: 56rem;
+}
+.image-content {
+    z-index: 10;
+    overflow-x: hidden;
+}
+.image-item {
+    width: 56.1rem;
+    height: 31.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../image/Rectangle\ 75.png);
+    display: none;
+    z-index: 1;
+}
+
+.active {
+    display: block;
+    transition: all .5s ease;
+    animation: animationImage 1s ease;
+
+}
+.text-content {
+    padding-top: 2.4rem;
+}
+.text-content-item {
+    padding: 1.8rem 0;
+    border-top: 1px solid #F3EAE5;
+    cursor: pointer;
+    overflow: hidden;
+  
+}
+.text-content-item:hover {
+    border-top: 1px solid #c7beb9;
+}
+.text-content-item:not(:last-child) {
+    border-bottom: 1px solid #F3EAE5;
+}
+.text-content-item:not(:last-child):hover {
+    border-bottom: 1px solid #c7beb9;
+}
+.content-item-head {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  
+}
+.content-item-head h6 {
+    font-family: Instrument Serif;
+}
+
+.text-content-item-preview {
+    color:  rgba(66, 41, 31, 0.85);
+    font-family: Inter;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    max-width: 89%;
+    display: none;
+    margin-top: 1.6rem;
+    animation: animationText 1s ease;
+    z-index: 1;
+
+}
+.text-active {
+    display: block;
+
+}
+.image-preview {
+ 
+    z-index: 10;
+    overflow-x: hidden;
+}
+.image-preview-item {
+    width: 70.6rem;
+    height: 99.1rem;
+    display: none;
+    z-index: 1;
+    background-image: url(../image/Rectangle\ 74.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.preview-active {
+    display: block;
+    animation: animationImage 1s ease;
+
+}
+
+@media screen and (max-width: 90em ) {
+    html {
+        font-size: 50%;
+    }
+
+    .content {
+        gap: 4rem;
+    }
+}
+@media screen and (max-width: 68.75em ) {
+    body, html {
+        width: 100%;
+    }
+    .content {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .header {
+        text-align: center;
+
+    }
+    .left-content {
+        max-width: max-content;
+    }
+    .text-content-item {
+        margin: 0 2rem;
+    }
+    .image-item {
+        margin: 0 auto;
+    }
+    .image-preview-item  {
+        margin: 0 auto;
+    }
+}
